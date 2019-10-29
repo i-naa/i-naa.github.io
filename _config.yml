@@ -63,7 +63,7 @@ repository_tree: master
 ##############################
 paths:
   root    : # title link url, "/" (default)
-  home    : /test/ # home layout url, "/" (default)
+  home    : # /test/ # home layout url, "/" (default)
   archive : # "/archive.html" (default)
   rss     : # "/feed.xml" (default)
 
@@ -108,17 +108,17 @@ sources: # bootcdn (default), unpkg
 ## => Sharing
 ##############################
 sharing:
-  provider: addthis # false (default), "addtoany", "addthis", "custom"
+  provider:  # false (default), "addtoany", "addthis", "custom"
 
   ## AddThis
   addthis:
-    id: ra-5be59ee2486770cb # AddThis pubid, e.g. ra-5xxxxxxxxxxx
+    id:  # AddThis pubid, e.g. ra-5xxxxxxxxxxx
 
 
 ## => Comments
 ##############################
 comments:
-  provider: gitalk # false (default), "disqus", "gitalk", "valine", "custom"
+  provider:  # false (default), "disqus", "gitalk", "valine", "custom"
   # provider: valine
 
   ## Disqus
