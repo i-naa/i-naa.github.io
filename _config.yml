@@ -194,6 +194,7 @@ exclude:
   - package-lock.json
   - package.json
   # - /docs
+  - /docs/_data/navigation.yml
   - /node_modules
   - /screenshots
   # - /test
