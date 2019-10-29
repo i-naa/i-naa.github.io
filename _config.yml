@@ -196,12 +196,12 @@ exclude:
   - jekyll-text-theme.gemspec
   - package-lock.json
   - package.json
-  # - /docs
+  - /docs
   - /node_modules
-  # - /screenshots
-  # - /test
+  - /screenshots
+  - /test
   - /vendor
-  # - /_posts
+  - /_posts
   - /index.html
 
 # collections_dir: docs
