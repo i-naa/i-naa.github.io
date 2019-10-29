@@ -196,7 +196,7 @@ exclude:
   # - /docs
   - /node_modules
   - /screenshots
-  - /test
+  # - /test
   - /vendor
   - /_posts
   - /index.html
