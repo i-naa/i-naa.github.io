@@ -29,7 +29,7 @@ description: >
 ##############################
 lang: en # the language of your site, default as "en"
 timezone: Asia/Seoul
- 
+
 
 ## => Author and Social
 ##############################
@@ -38,26 +38,24 @@ author:
   name      : ina.cha
   url       :
   avatar    : /assets/apple-touch-icon.png
-  bio: >
-    TeXt is a super customizable Jekyll theme for personal site, team site, blog, project, documentation, etc.
-    Similar to iOS 11 style, it has large and prominent titles, round buttons and cards.
-  email     : kitian616@outlook.com
+  bio       :
+  email     : temp.ina.cha@gmail.com
   facebook  :
-  twitter   : kitian616
-  weibo     : 234695683
-  googleplus: 101827554735084402671
+  twitter   :
+  weibo     :
+  googleplus:
   telegram  :
   medium    :
   zhihu     :
   douban    :
   linkedin  :
-  github    : kitian616/jekyll-TeXt-theme
+  github    :
   npm       :
 
 
 ## => GitHub Repository (if the site is hosted by GitHub)
 ##############################
-repository: kitian616/jekyll-TeXt-theme
+repository: i-naa/i-naa.github.io
 repository_tree: master
 
 
@@ -130,31 +128,30 @@ comments:
   ## Gitalk
   # please refer to https://github.com/gitalk/gitalk for more info.
   gitalk:
-    clientID    : 143666b578a416f82175
-    clientSecret: 1d1c0604a1a4bff9b59ab7f56724dc0e8b837775
-    repository  : gitalk-demo
-    owner       : kitian616
+    clientID    :
+    clientSecret:
+    repository  :
+    owner       :
     admin:
-      - kitian616
 
   ## Valine
   # please refer to https://valine.js.org/en/ for more info.
   valine:
-    app_id      : uAG3OhdcH8H4fxSqXLyBljA7-gzGzoHsz
-    app_key     : Mzf5m9skSwYVWVXhGiYMNyXs
+    app_id      :
+    app_key     :
     placeholder : # Prompt information
 
 
 ## => Pageview
 ##############################
 pageview:
-  provider: leancloud # false (default), "leancloud", "custom"
+  provider:  # false (default), "leancloud", "custom"
 
   ## Leancloud
   leancloud:
-    app_id    : uAG3OhdcH8H4fxSqXLyBljA7-gzGzoHsz
-    app_key   : Mzf5m9skSwYVWVXhGiYMNyXs
-    app_class : TeXtDemo
+    app_id    :
+    app_key   :
+    app_class :
 
 
 ## => Search
@@ -170,12 +167,12 @@ search:
 ## => Analytics
 ##############################
 analytics:
-  provider: google # false (default), "google", "custom"
+  provider:  # false (default), "google", "custom"
 
   ## Google Analytics
   google:
-    tracking_id : UA-71907556-1
-    anonymize_ip: false
+    tracking_id :
+    anonymize_ip:
 
 
 ## => Build
@@ -199,7 +196,7 @@ exclude:
   - /docs
   - /node_modules
   - /screenshots
-  - /test
+  # - /test
   - /vendor
   - /_posts
   - /index.html
