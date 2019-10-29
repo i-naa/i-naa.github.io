@@ -199,12 +199,12 @@ exclude:
   # - /docs
   - /node_modules
   # - /screenshots
-  - /test
+  # - /test
   - /vendor
   - /_posts
   - /index.html
 
-collections_dir: test
+collections_dir: docs
 collections:
   docs:
     output: true
