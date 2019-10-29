@@ -65,7 +65,7 @@ repository_tree: master
 ##############################
 paths:
   root    : # title link url, "/" (default)
-  home    : /test/ # home layout url, "/" (default)
+  home    : /text/ # home layout url, "/" (default)
   archive : # "/archive.html" (default)
   rss     : # "/feed.xml" (default)
 
@@ -199,12 +199,12 @@ exclude:
   # - /docs
   - /node_modules
   # - /screenshots
-  # - /test
+  - /test
   - /vendor
   - /_posts
   - /index.html
 
-collections_dir: docs
+collections_dir: test
 collections:
   docs:
     output: true
