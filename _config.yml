@@ -204,7 +204,7 @@ exclude:
   # - /_posts
   - /index.html
 
-collections_dir: docs
+# collections_dir: docs
 collections:
   docs:
     output: true
