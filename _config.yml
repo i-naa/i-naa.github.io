@@ -206,8 +206,8 @@ exclude:
 
 collections_dir: docs
 collections:
-  docs:
-    output: true
+  # docs:
+  #   output: true
   sample_page:
     output: true
   sample_articles:
