@@ -18,7 +18,7 @@
 ##############################
 text_skin: default # "default" (default), "dark", "forest", "ocean", "chocolate", "orange"
 highlight_theme: default # "default" (default), "tomorrow", "tomorrow-night", "tomorrow-night-eighties", "tomorrow-night-blue", "tomorrow-night-bright"
-url     : https://tianqi.name
+url     : https://i-naa.github.io/
 baseurl : #/jekyll-TeXt-theme
 title   : TeXt Theme
 description: >
@@ -28,7 +28,7 @@ description: >
 ## => Language and Timezone
 ##############################
 lang: en # the language of your site, default as "en"
-timezone: Asia/Shanghai
+timezone: Asia/Seoul
 
 
 ## => Author and Social
