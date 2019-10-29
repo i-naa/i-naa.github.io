@@ -34,8 +34,8 @@ timezone: Asia/Seoul
 ## => Author and Social
 ##############################
 author:
-  type      : organization # "person" (default), "organization"
-  name      : TeXt
+  type      : person # "person" (default), "organization"
+  name      : ina.cha
   url       :
   avatar    : /assets/apple-touch-icon.png
   bio: >
