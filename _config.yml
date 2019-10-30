@@ -201,6 +201,11 @@ exclude:
   - /screenshots
   - /vendor
 
+
+collections:
+  docs:
+    output: true
+
 defaults:
   - scope:
       path: ""
