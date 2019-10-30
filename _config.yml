@@ -64,7 +64,7 @@ repository_tree: master
 ##############################
 paths:
   root    : # title link url, "/" (default)
-  home    : /test/ # home layout url, "/" (default)
+  home    : # home layout url, "/" (default)
   archive : # "/archive.html" (default)
   rss     : # "/feed.xml" (default)
 
@@ -203,12 +203,6 @@ exclude:
 
 
 defaults:
-  ## home
-  - scope:
-      path: "test"
-    values:
-      articles:
-        excerpt_type: html
   - scope:
       path: ""
       type: posts
