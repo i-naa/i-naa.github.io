@@ -202,10 +202,6 @@ exclude:
   - /vendor
 
 
-collections:
-  docs:
-    output: true
-
 defaults:
   - scope:
       path: ""
