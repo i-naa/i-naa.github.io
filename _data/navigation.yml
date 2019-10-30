@@ -4,3 +4,11 @@ header:
   - title:      Docs
     url:        /docs/en/quick-start
     key:        docs
+
+layouts:
+  - title: Articles
+    children:
+      - title: Article#1
+        url: /doc/
+      - title: Article#2
+        url: /doc/
