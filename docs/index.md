@@ -7,8 +7,8 @@ sidebar:
   nav: layouts
 ---
 
-# This is doc index page
-## Please look at sidebar and concentrate on the main content!
+## This is doc index page
+### Please look at sidebar and concentrate on the main content!
 This is a content#1
-## Sample content
+### Sample content
 This is a content#2
