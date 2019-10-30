@@ -9,6 +9,6 @@ layouts:
   - title: Articles
     children:
       - title: Article#1
-        url: /doc/
+        url: /docs/
       - title: Article#2
-        url: /doc/
+        url: /docs/
