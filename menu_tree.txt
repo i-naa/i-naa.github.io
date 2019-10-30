@@ -1,0 +1,36 @@
+header:
+  - title: Docs
+    url: /docs/
+    key: docs
+docs:
+  - title: Computer science
+    children:
+      - title: Operating system
+        children:
+          - title: Windows
+            url: /docs/computer-science/operating-system/windows
+          - title: Linux
+            url: /docs/computer-science/operating-system/linux
+          - title: Mac
+            url: /docs/computer-science/operating-system/mac
+          - title: Android
+            url: /docs/computer-science/operating-system/android
+  - title: Digital forensic
+    children:
+      - title: Disk forensic
+        url: /docs/digital-forensic/disk-forensic
+      - title: Memory forensic
+        url: /docs/digital-forensic/memory-forensic
+
+
+
+    navigation
+    - Computer science
+      - Operating system
+        - Windows
+        - Linux
+        - Mac
+        - Android
+    - Digital forensic
+      - Disk forensic
+      - Memory forensic
