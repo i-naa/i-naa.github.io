@@ -204,11 +204,11 @@ exclude:
 
 collections:
   sample_page:
-  output: true
+    output: true
   sample_articles:
-  output: true
+    output: true
   sample_languages:
-  output: true
+    output: true
 
 defaults:
   - scope:
