@@ -2,7 +2,7 @@ header:
   - title:      Archive
     url:        /archive.html
   - title:      Docs
-    url:        /docs/en/quick-start
+    url:        /docs/
     key:        docs
 
 layouts:
