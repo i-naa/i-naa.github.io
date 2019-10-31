@@ -1,6 +1,9 @@
 header:
   - title:      Archive
     url:        /archive.html
+  - title:      Docs
+    url:        /docs/
+    key:        docs
 
 docs_navigation:
   - title: Computer science
