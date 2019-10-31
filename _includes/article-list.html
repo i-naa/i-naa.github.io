@@ -118,7 +118,7 @@
             {%- assign _tags = _tags | append: _tag_encode | append: ',' -%}
           {%- endif -%}
         {%- endfor -%}
-        {%- if include.group_by == 'year' -%}
+        {%- if include.group_by == 'relative_path' -%}
           {%- assign _current_relative_path = _article.relative_path | date: '%Y' -%}
           {%- if _current_relative_path != _relative_path -%}
             {%- unless forloop.first -%}</ul></section>{%- endunless -%}
