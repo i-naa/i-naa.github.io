@@ -4,7 +4,7 @@ title: Documents
 aside:
   toc: true
 sidebar:
-  nav: layouts
+  nav: docs_navigation
 ---
 
 ## This is doc index page
