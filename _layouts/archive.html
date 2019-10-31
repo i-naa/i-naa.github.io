@@ -30,16 +30,16 @@ titles:
 
   <!-- Documents area -->
   {%- if site.docs.size != 0 -%}
-  <h4>Docs</h4>
+  <h2>Docs</h2>
   <div class="js-result layout--archive__result d-none">
-    {%- include article-list.html articles=site.docs type='brief' show_info=true reverse=true group_by='year' -%}
+    {%- include article-list.html articles=site.docs type='brief_second' show_info=true reverse=true group_by='year' -%}
   </div>
   {%- endif -%}
 
   <!-- Posts area -->
-  <h4>Posts</h4>
+  <h2>Posts</h2>
   <div class="js-result layout--archive__result d-none">
-    {%- include article-list.html articles=site.posts type='brief' show_info=true reverse=true group_by='year' -%}
+    {%- include article-list.html articles=site.posts type='brief_second' show_info=true reverse=true group_by='year' -%}
   </div>
 </div>
 
