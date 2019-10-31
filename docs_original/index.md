@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Documents
+title: Page - Sidebar
 aside:
   toc: true
 sidebar:

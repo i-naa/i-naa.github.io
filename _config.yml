@@ -201,10 +201,9 @@ exclude:
   - /screenshots
   - /vendor
 
+collections_dir: docs
 collections:
-  computer-science:
-    output: true
-  digital-forensic:
+  docs:
     output: true
 
   sample_page:
