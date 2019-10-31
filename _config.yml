@@ -196,6 +196,7 @@ exclude:
   - jekyll-text-theme.gemspec
   - package-lock.json
   - package.json
+  - /docs_original
   - /node_modules
   - /screenshots
   - /vendor
