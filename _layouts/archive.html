@@ -29,16 +29,13 @@ titles:
   {%- include tags.html -%}
 
   <!-- Documents area -->
-  <h2>Docs</h2>
-  <hr>
-
+  <h2 style='border-bottom:1px dashed #cecece;padding-bottom:1rem;'>Docs</h2>
   <div class="js-result layout--archive__result d-none">
     {%- include article-list.html articles=site.docs type='brief' show_info=true reverse=true group_by='year' -%}
   </div>
 
   <!-- Posts area -->
-  <h2>Posts</h2>
-  <hr>
+  <h2 style='border-bottom:1px dashed #cecece;padding-bottom:1rem;'>Posts</h2>
   <div class="js-result layout--archive__result d-none">
     {%- include article-list.html articles=site.posts type='brief' show_info=true reverse=true group_by='year' -%}
   </div>
