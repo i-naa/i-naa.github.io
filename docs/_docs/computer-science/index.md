@@ -35,4 +35,5 @@ This is a content#2
     ### Sample content
     This is a content#2
 
-    {%- include article-list.html articles=site.docs type='brief' show_info=true reverse=true group_by='year' -%}
+    {%- assign _articles = site.docs|where:'category','computer-science' -%}
+    {%- include article-list.html articles=_articles type='brief' show_info=true reverse=true group_by='year' -%}
