@@ -10,3 +10,6 @@ articles:
 sidebar:
   nav: docs_navigation
 ---
+
+    {%- assign _articles = site.docs|where:'category','computer-science' -%}
+    {{_articles}}
