@@ -29,15 +29,16 @@ titles:
   {%- include tags.html -%}
 
   <!-- Documents area -->
-  {%- if site.docs.size != 0 -%}
-  <h2>Docs</h2>
+  <h2 class='button button--secondary button--rounded button--xl'>Docs</h2>
+  <hr>
+
   <div class="js-result layout--archive__result d-none">
     {%- include article-list.html articles=site.docs type='brief_second' show_info=true reverse=true group_by='year' -%}
   </div>
-  {%- endif -%}
 
   <!-- Posts area -->
-  <h2>Posts</h2>
+  <h2 class=' button--secondary button--rounded button--xl'>Posts</h2>
+  <hr>
   <div class="js-result layout--archive__result d-none">
     {%- include article-list.html articles=site.posts type='brief_second' show_info=true reverse=true group_by='year' -%}
   </div>
