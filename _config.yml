@@ -196,13 +196,23 @@ exclude:
   - jekyll-text-theme.gemspec
   - package-lock.json
   - package.json
-  # - /docs
+  # - /articles
   - /node_modules
   - /screenshots
   - /vendor
 
-
+collections_dir: docs
 collections:
+  docs:
+    output: true
+    computer-science: true
+      output: true
+      operating-system: true
+    digital-forensic: true
+      output: true
+      memory-forensic: true
+        output: true
+
   sample_page:
     output: true
   sample_articles:
@@ -223,6 +233,34 @@ defaults:
       show_edit_on_github: true
       show_subscribe: true
       pageview: true
+  - scope:
+      path: ""
+      type: computer-science
+    values:
+      layout: article
+      nav_key: docs
+      sidebar:
+        nav: layouts
+      license: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_date: false
+  - scope:
+      path: ""
+      type: digital-forensic
+    values:
+      layout: article
+      nav_key: docs
+      sidebar:
+        nav: layout_sample
+      license: true
+      aside:
+        toc: true
+      show_edit_on_github: true
+      show_date: false
+
+
 
 
 ## => Plugins
