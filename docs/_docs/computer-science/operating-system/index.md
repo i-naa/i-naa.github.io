@@ -2,6 +2,7 @@
 layout: article
 title: Page - Operating-system
 tags: Operating-system
+date: 
 aside:
   toc: true
 sidebar:
