@@ -1,7 +1,6 @@
 ---
 layout: articles
 title: Computer science
-date: 2019-10-31
 articles:
   data_source: site.docs
   show_cover: false
