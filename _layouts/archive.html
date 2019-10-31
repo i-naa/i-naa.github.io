@@ -29,18 +29,18 @@ titles:
   {%- include tags.html -%}
 
   <!-- Documents area -->
-  <h2 class='button button--secondary button--rounded button--xl'>Docs</h2>
+  <h2>Docs</h2>
   <hr>
 
   <div class="js-result layout--archive__result d-none">
-    {%- include article-list.html articles=site.docs type='brief_second' show_info=true reverse=true group_by='year' -%}
+    {%- include article-list.html articles=site.docs type='brief' show_info=true reverse=true group_by='year' -%}
   </div>
 
   <!-- Posts area -->
   <h2 class=' button--secondary button--rounded button--xl'>Posts</h2>
   <hr>
-  <div class="js-result layout--archive__result d-none">
-    {%- include article-list.html articles=site.posts type='brief_second' show_info=true reverse=true group_by='year' -%}
+  <div>
+    {%- include article-list.html articles=site.posts type='brief' show_info=true reverse=true group_by='year' -%}
   </div>
 </div>
 
