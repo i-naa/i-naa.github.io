@@ -36,4 +36,3 @@ This is a content#2
 
     {%- assign _articles = site.docs|where:'category','computer-science' -%}
     {{_articles}}
-    {%- include article-list.html articles=_articles type='brief' show_info=true reverse=true group_by='year' -%}
