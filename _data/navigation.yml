@@ -5,6 +5,18 @@ header:
     url:        /docs/
     key:        docs
 
+docs:
+  - title: Computer science
+    url: /docs/computer-science
+    children:
+      - title: Operating system
+        url: /docs/computer-science/opertaing-system
+  - title: Digital forensic
+    url: /docs/digital-forensic
+    children:
+      - title: Memory forensic
+        url: /docs/digital-forensic/memory-forensic
+
 layouts:
   - title: Articles
     children:

@@ -1,12 +1,11 @@
 ---
 layout: article
-title: Page - Sidebarasdasd
-date: 2017-01-02
-tags: Computer-science
+title: Computer science
+date: 2019-10-31
 aside:
   toc: true
 sidebar:
-  nav: layouts
+  nav: docs
 ---
 
 ## This is doc index page
@@ -31,3 +30,5 @@ This is a content#2
     This is a content#1
     ### Sample content
     This is a content#2
+
+    {%- include article-list.html articles=site.docs|where:'category','computer-science' type='brief' show_info=true reverse=true group_by='year' -%}

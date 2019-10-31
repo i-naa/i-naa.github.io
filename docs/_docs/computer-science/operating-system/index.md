@@ -2,6 +2,7 @@
 layout: article
 title: Page - Operating-system
 tags: Operating-system
+type: computer-science
 date: 2019-10-10
 aside:
   toc: true
