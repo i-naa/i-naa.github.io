@@ -14,8 +14,12 @@ docs_navigation:
   - title: Digital forensic
     url: /docs/digital-forensic
     children:
+      - title: Disk forensic
+        url: /docs/digital-forensic/disk-forensic
       - title: Memory forensic
         url: /docs/digital-forensic/memory-forensic
+  - title : Code review
+    url: /docs/code-review
 
 layouts:
   - title: Articles
