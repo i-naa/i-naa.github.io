@@ -205,12 +205,13 @@ collections_dir: docs
 collections:
   docs:
     output: true
-    computer-science: true
+    computer-science:
       output: true
-      operating-system: true
-    digital-forensic: true
+      operating-system:
+        output: true
+    digital-forensic:
       output: true
-      memory-forensic: true
+      memory-forensic:
         output: true
 
   sample_page:
