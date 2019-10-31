@@ -235,8 +235,7 @@ defaults:
       show_subscribe: true
       pageview: true
   - scope:
-      path: ""
-      type: computer-science
+      path: "/_docs/computer-science"
     values:
       layout: article
       nav_key: docs
@@ -248,8 +247,7 @@ defaults:
       show_edit_on_github: true
       show_date: false
   - scope:
-      path: ""
-      type: digital-forensic
+      path: "/_docs/digital-forensic"
     values:
       layout: article
       nav_key: docs
