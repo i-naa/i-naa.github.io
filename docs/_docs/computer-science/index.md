@@ -35,4 +35,4 @@ This is a content#2
     ### Sample content
     This is a content#2
 
-    {%- include article-list.html articles=site.docs|where:'category','computer-science' type='brief' show_info=true reverse=true group_by='year' -%}
+    {%- include article-list.html articles=site.docs type='brief' show_info=true reverse=true group_by='year' -%}
