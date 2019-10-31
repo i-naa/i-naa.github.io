@@ -196,23 +196,16 @@ exclude:
   - jekyll-text-theme.gemspec
   - package-lock.json
   - package.json
-  # - /articles
+  - /docs
   - /node_modules
   - /screenshots
   - /vendor
 
-collections_dir: docs
 collections:
   computer-science:
-    permalink: docs/:collection/:path
     output: true
-    operating-system:
-      output: true
   digital-forensic:
-    permalink: docs/:collection/:path
     output: true
-    memory-forensic:
-      output: true
 
   sample_page:
     output: true
