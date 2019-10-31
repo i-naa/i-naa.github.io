@@ -20,6 +20,8 @@ docs_navigation:
         url: /docs/digital-forensic/memory-forensic
   - title : Code review
     url: /docs/code-review
+    children:
+        - title: Volatility(v2.6, py)
 
 layouts:
   - title: Articles
