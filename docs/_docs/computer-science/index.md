@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Page - Sidebarasdasd
+date: 2017-01-02
 tags: Computer-science
 aside:
   toc: true
