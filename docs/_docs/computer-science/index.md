@@ -1,11 +1,15 @@
 ---
-layout: article
+layout: articles
 title: Computer science
 date: 2019-10-31
-aside:
-  toc: true
+articles:
+  data_source: site.docs|where:'type','computer-science'
+  show_cover: false
+  show_excerpt: true
+  show_readmore: true
+  show_info: true
 sidebar:
-  nav: docs
+  nav: docs_navigation
 ---
 
 ## This is doc index page
