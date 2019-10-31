@@ -204,12 +204,12 @@ exclude:
 collections_dir: docs
 collections:
   computer-science:
-    relative_path: docs/computer-science
+    permalink: docs/:collection/:path
     output: true
     operating-system:
       output: true
   digital-forensic:
-    relative_path: docs/digital-forensic
+    permalink: docs/:collection/:path
     output: true
     memory-forensic:
       output: true
