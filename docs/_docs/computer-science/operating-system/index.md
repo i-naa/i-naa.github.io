@@ -2,7 +2,7 @@
 layout: article
 title: Page - Operating-system
 tags: Operating-system
-date: 
+date: 2019-10-10
 aside:
   toc: true
 sidebar:
