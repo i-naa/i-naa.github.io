@@ -201,18 +201,16 @@ exclude:
   - /screenshots
   - /vendor
 
-collections_dir: docs
+# collections_dir: docs
 collections:
-  docs:
+  computer-science:
     output: true
-    computer-science:
+    operating-system:
       output: true
-      operating-system:
-        output: true
-    digital-forensic:
+  digital-forensic:
+    output: true
+    memory-forensic:
       output: true
-      memory-forensic:
-        output: true
 
   sample_page:
     output: true
