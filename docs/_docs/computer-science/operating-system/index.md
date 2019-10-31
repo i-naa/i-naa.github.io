@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Page - Operating-system
+tags: Operating-system
 aside:
   toc: true
 sidebar:

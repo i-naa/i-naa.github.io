@@ -1,6 +1,7 @@
 ---
 layout: article
 title: Page - Sidebarasdasd
+tags: Computer-science
 aside:
   toc: true
 sidebar:
