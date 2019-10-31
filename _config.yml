@@ -201,7 +201,7 @@ exclude:
   - /screenshots
   - /vendor
 
-# collections_dir: docs
+collections_dir: docs
 collections:
   computer-science:
     output: true
