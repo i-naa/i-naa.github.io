@@ -9,7 +9,7 @@ articles:
   show_readmore: true
   show_info: true
 sidebar:
-  nav: docs_navigation
+  nav: layouts
 ---
 
 ## This is doc index page
