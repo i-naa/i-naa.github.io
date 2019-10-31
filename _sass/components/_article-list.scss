@@ -4,7 +4,6 @@
     font-family: map-get($base, font-family-code);
     font-size: map-get($base, font-size-sm);
     white-space: nowrap;
-    padding-left:map-get($spacers, 10);
   }
   &.gird--sm {
     .card__header {
