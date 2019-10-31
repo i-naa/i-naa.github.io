@@ -107,6 +107,37 @@
           <a itemprop="headline" class="item__header" href="{{ _article_url }}">{{ _article.title }}</a></div>
       </li>
 
+
+      {%- elsif include.type == 'docs' -%}
+        {%- assign _tags = '' -%}
+        {%- for _tag in _article.tags -%}
+          {%- assign _tag_encode = _tag | strip | url_encode -%}
+          {%- if forloop.last -%}
+            {%- assign _tags = _tags | append: _tag_encode -%}
+          {%- else -%}
+            {%- assign _tags = _tags | append: _tag_encode | append: ',' -%}
+          {%- endif -%}
+        {%- endfor -%}
+        {%- if include.group_by == 'year' -%}
+          {%- assign _current_relative_path = _article.relative_path | date: '%Y' -%}
+          {%- if _current_relative_path != _relative_path -%}
+            {%- unless forloop.first -%}</ul></section>{%- endunless -%}
+            <section><h2 class="article-list__group-header">{{ _current_relative_path }}</h2><ul class="items">
+            {%- assign _relative_path = _current_relative_path -%}
+          {%- endif -%}
+        {%- endif -%}
+        {%- include snippets/get-locale-string.html key='ARTICLE_LIST_DATE_FORMAT' -%}
+        <li class="item" itemscope itemtype="http://schema.org/BlogPosting" data-tags="{{ _tags }}">
+          <div class="item__content">
+            {%- if include.show_info -%}
+              <span class="item__meta">{{ _article.date | date: __return }}</span>
+            {%- endif -%}
+            <a itemprop="headline" class="item__header" href="{{ _article_url }}">{{ _article.title }}</a></div>
+        </li>
+
+
+
+
     {%- elsif include.type == 'grid' -%}
       {%- if include.size == 'sm' -%}
         <div class="cell cell--12 cell--md-4 cell--lg-3">
