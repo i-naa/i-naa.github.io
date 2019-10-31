@@ -11,5 +11,5 @@ sidebar:
   nav: docs_navigation
 ---
 
-    {%- assign _articles = site.docs|where:'category','operting-system' -%}
+    {%- assign _articles = site.docs|where:'category','computer-science' -%}
     {{_articles}}
