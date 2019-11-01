@@ -39,7 +39,7 @@ layout: page
     {%- assign _filter_values = _page_articles_filter.values | replace: " ","" | downcase | split: "," -%}
 
     {%- if _filter_key -%}
-      {%- assign _filtered_articles = '' -%}
+      <!-- {%- assign _filtered_articles = '' -%} -->
       {%- for _filter_value in _filter_values -%}
         {%- assign _temp_articles = _articles | where: _filter_key, _filter_value -%}
         {%- assign _filtered_articles = _filtered_articles | concat: _temp_articles -%}
