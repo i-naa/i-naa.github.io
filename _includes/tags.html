@@ -1,8 +1,7 @@
 {%- assign _tag_max_size = 1 -%}
 {%- assign _tag_min_size = 1 -%}
 {%- assign _tag_cur_size = 1 -%}
-{%- assign _tags = site.tags | sort -%}
-
+{%- assign _tags = site.tags -%}
 
 {%- assign _docs = site.docs | where: 'type', 'document' -%}
 {%- assign _docs_tags_group = _docs | map: 'tags' | join: ',' | split: ',' | group_by: tag -%}
@@ -13,8 +12,8 @@
   {%- assign _tags = _tags | concat: _docs_tag | compact -%}
 {%- endfor -%}
 
-
 {%- for _tag in _tags -%}
+  {{_tag[0]}} - {{_tag[1].size}}<br>
   {%- assign _tag_cur_size = _tag[1].size -%}
   {%- if _tag_cur_size > _tag_max_size -%}
     {%- assign _tag_max_size =  _tag_cur_size -%}
