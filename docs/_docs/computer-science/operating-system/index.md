@@ -1,34 +1,15 @@
 ---
-layout: article
-title: Page - Operating-system
-tags: Operating-system
-type: computer-science
-date: 2019-10-10
-aside:
-  toc: true
+layout: articles
+title: Operating system index
+articles:
+  data_source: site.docs
+  filter:
+    key: category
+    values: computer-science.operating-system
+  show_cover: false
+  show_excerpt: true
+  show_readmore: true
+  show_info: true
 sidebar:
-  nav: layouts
+  nav: docs_navigation
 ---
-
-## This is doc index page
-<!--more-->
-
-### Please look at sidebar and concentrate on the main content!
-This is a content#1
-### Sample content
-This is a content#2
-
-    ---
-    layout: article
-    title: Page - Sidebar
-    aside:
-      toc: true
-    sidebar:
-      nav: layouts
-    ---
-
-    ## This is doc index page
-    ### Please look at sidebar and concentrate on the main content!
-    This is a content#1
-    ### Sample content
-    This is a content#2

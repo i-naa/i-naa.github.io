@@ -232,7 +232,6 @@ defaults:
       path: "_docs/computer-science"
       type: docs
     values:
-      category: computer-science
       layout: article
       nav_key: docs
       sidebar:
@@ -246,7 +245,6 @@ defaults:
   - scope:
       path: "_docs/digital-forensic"
     values:
-      category: digital-forensic
       layout: article
       nav_key: docs
       sidebar:
