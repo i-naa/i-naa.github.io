@@ -5,7 +5,7 @@ articles:
   data_source: site.docs
   filter:
     key: category
-    values: computer-science.operating-system
+    values: docs.computer-science.operating-system
   show_cover: false
   show_excerpt: true
   show_readmore: true
