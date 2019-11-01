@@ -2,7 +2,7 @@
 {%- assign _tag_min_size = 1 -%}
 {%- assign _tag_cur_size = 1 -%}
 {%- assign _posts_tags = site.tags -%}
-{%- assign _docs_tags = site.docs | map: 'tags' | join: ',' | split: ',' | uniq-%}
+{%- assign _docs_tags = site.docs | map: 'tags' | join: ',' | split: ',' | uniq -%}
 {%- assign _tags = _posts_tags | concat: _docs_tags | sort -%}
 {%- for _tag in _tags -%}
   {%- assign _tag_cur_size = _tag[1].size -%}
