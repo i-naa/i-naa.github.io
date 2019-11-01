@@ -11,13 +11,14 @@
   {%- assign _docs_tag = '' | split: ',' -%}
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.name -%}
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.items -%}
-  {%- assign _tags = _tags | push: _docs_tag-%}
+  {%- assign _tags = _tags | push: _docs_tag -%}
 {%- endfor -%}
 {%- assign _tags = _tags | sort -%}
 
 
-
 {%- for _tag in _tags -%}
+  {{_tag[0]}}<br>
+
   {%- assign _tag_cur_size = _tag[1].size -%}
   {%- if _tag_cur_size > _tag_max_size -%}
     {%- assign _tag_max_size =  _tag_cur_size -%}
