@@ -12,4 +12,5 @@ articles:
   show_info: true
 sidebar:
   nav: docs_navigation
+type: index
 ---
