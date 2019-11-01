@@ -226,10 +226,26 @@ defaults:
       show_edit_on_github: true
       show_subscribe: true
       pageview: true
+
   - scope:
-      path: ""
-      type: computer-science
+      path: "_docs/*/index.md"
     values:
+      category: index
+      layout: articles
+      title: Index
+      articles:
+        data_source: site.docs
+        show_cover: false
+        show_excerpt: true
+        show_readmore: true
+        show_info: true
+      sidebar:
+        nav: docs_navigation
+
+  - scope:
+      path: "_docs/computer-science/*"
+    values:
+      category: computer-science
       layout: article
       nav_key: docs
       sidebar:
@@ -240,9 +256,9 @@ defaults:
       show_edit_on_github: true
       show_date: false
   - scope:
-      path: ""
-      type: digital-forensic
+      path: "_docs/digital-forensic/*"
     values:
+      category: digital-forensic
       layout: article
       nav_key: docs
       sidebar:
