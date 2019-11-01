@@ -1,7 +1,7 @@
 {%- assign _tag_max_size = 1 -%}
 {%- assign _tag_min_size = 1 -%}
 {%- assign _tag_cur_size = 1 -%}
-{%- assign _tags = site.tags -%}
+{%- assign _tags = site.tags | sort -%}
 
 
 {%- assign _docs = site.docs | where: 'type', 'document' -%}
