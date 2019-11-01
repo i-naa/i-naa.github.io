@@ -228,7 +228,7 @@ defaults:
       pageview: true
 
   - scope:
-      path: "_docs/*/index.md"
+      path: _docs/*/index.md
     values:
       category: index
       layout: articles
