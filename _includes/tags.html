@@ -10,6 +10,7 @@
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.name -%}
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.items -%}
   {%- assign _tags = _tags | concat: _docs_tag | compact -%}
+  {{_tags | array_to_sentence_string}}
 {%- endfor -%}
 
 {%- for _tag in _tags -%}
