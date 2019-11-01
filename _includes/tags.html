@@ -6,8 +6,8 @@
 
 {%- assign _docs_tags = '' -%}
 {%- assign _docs = site.docs | where: 'type', 'document' -%}
-{%- assign _docs_tags_group = _docs | group_by:tag -%}
-
+{%- assign _docs_tags_group = _docs | map: 'tags' | join: ',' | split: ',' | group_by: tag -%}
+{{_docs_tags_group}}
 {%- assign _tags = _tags | concat: _docs_tags_group -%}
 
 {%- for _tag in _tags -%}
