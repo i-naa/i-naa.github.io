@@ -4,7 +4,6 @@
 {%- assign _tags = site.tags -%}
 
 
-{%- assign _docs_tags = '' | split: ',' -%}
 {%- assign _docs = site.docs | where: 'type', 'document' -%}
 {%- assign _docs_tags_group = _docs | map: 'tags' | join: ',' | split: ',' | group_by: tag -%}
 {%- for _docs_tag_group in _docs_tags_group -%}
@@ -13,12 +12,11 @@
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.items -%}
   {%- assign _tags = _tags | push: _docs_tag -%}
 {%- endfor -%}
-{%- assign _tags = _tags | sort -%}
-
+{% for _tag in _tags %}
+  {{_tag[0]}}<br>
+{% endfor %}
 
 {%- for _tag in _tags -%}
-  {{_tag[0]}}<br>
-
   {%- assign _tag_cur_size = _tag[1].size -%}
   {%- if _tag_cur_size > _tag_max_size -%}
     {%- assign _tag_max_size =  _tag_cur_size -%}
