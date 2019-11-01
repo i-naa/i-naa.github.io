@@ -35,6 +35,9 @@ layout: page
 {%- if _articles -%}
 
   {%- if _page_articles_data_source_filter -%}
+
+    {{ _page_articles_data_source_filter }}
+    
     {%- assign _filter_key = _page_articles_data_source_filter.key | default: nil -%}
     {%- assign _filter_values = _page_articles_data_source_filter.values | replace: " ","" | downcase | split: "," -%}
 
