@@ -8,11 +8,16 @@
 {%- assign _docs = site.docs | where: 'type', 'document' -%}
 {%- assign _docs_tags_group = _docs | map: 'tags' | join: ',' | split: ',' | group_by: tag -%}
 {%- for _docs_tag_group in _docs_tags_group -%}
+  {{_docs_tag_group.name}} - {{_docs_tag_group.items.size}}<br>
+  {% comment %}
   {%- assign _docs_tag = _docs_tag_group.name | append: '|' | append _docs_tag_group.items.size | split: '|' -%}
   {%- assign _docs_tags = _docs_tags | concat: _tags_tag -%}
+  {% endcomment %}
 {%- endfor -%}
+{% comment %}
 {%- assign _docs_tags | compact -%}
 {{_docs_tags}}
+{% endcomment %}
 
 {%- for _tag in _tags -%}
   {%- assign _tag_cur_size = _tag[1].size -%}
