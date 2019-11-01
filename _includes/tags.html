@@ -1,7 +1,7 @@
 {%- assign _tag_max_size = 1 -%}
 {%- assign _tag_min_size = 1 -%}
 {%- assign _tag_cur_size = 1 -%}
-{%- assign _tags = site.tags | sort -%}
+{%- assign _tags = site.tags -%}
 
 
 {%- assign _docs_tags = '' | split: ',' -%}
@@ -11,8 +11,9 @@
   {%- assign _docs_tag = '' | split: ',' -%}
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.name -%}
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.items -%}
-  {{_docs_tag[0]}} - {{_docs_tag[1].size}}<br>
+  {%- assign _tags = _tags | push: _docs_tag-%}
 {%- endfor -%}
+{%- assign _tags = _tags | sort -%}
 
 
 
