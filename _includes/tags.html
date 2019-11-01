@@ -13,7 +13,7 @@
 
   {%- assign _temp_array = '1,2,3' | split: ',' -%}
   {%- assign _docs_tag = _docs_tag | push: _temp_array -%}
-
+  {{_docs_tag}}
 {%- endfor -%}
 
 
