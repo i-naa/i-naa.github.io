@@ -6,8 +6,6 @@
 
 
 {%- for _tag in _tags -%}
-  {{_tag[0]}}
-  {{_tag[1]}}
   {%- assign _tag_cur_size = _tag[1].size -%}
   {%- if _tag_cur_size > _tag_max_size -%}
     {%- assign _tag_max_size =  _tag_cur_size -%}
