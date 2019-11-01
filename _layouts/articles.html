@@ -40,10 +40,6 @@ layout: page
 
     {%- if _filter_key -%}
       {%- assign _filtered_articles = '' | split '' -%}
-      {%- for _filter_value in _filter_values -%}
-        {%- assign _temp_articles = _articles | where: _filter_key, _filter_value -%}
-      {%- endfor -%}
-      {%- assign _articles = _filtered_articles -%}
     {%- endif -%}
   {%- endif -%}
 
