@@ -7,8 +7,12 @@
 {%- assign _docs_tags = '' -%}
 {%- assign _docs = site.docs | where: 'type', 'document' -%}
 {%- assign _docs_tags_group = _docs | map: 'tags' | join: ',' | split: ',' | group_by: tag -%}
-{{_docs_tags_group}}
-{%- assign _tags = _tags | concat: _docs_tags_group -%}
+{{_docs_tags_group[0]}}
+{%- for _docs_tag_group in _docs_tags_group -%}
+  {{_docs_tag_group[0]}}-{{_docs_tag_group[1]}}
+
+{%- endfor -%}
+
 
 {%- for _tag in _tags -%}
   {%- assign _tag_cur_size = _tag[1].size -%}
