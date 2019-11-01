@@ -33,20 +33,8 @@ layout: page
 {%- assign _type = page.articles.type | default: layout.articles.type -%}
 
 {%- if _articles -%}
+  {{ _articles }}
 
-  {%- if _page_articles_data_source_filter -%}
-
-    {{ _page_articles_data_source_filter }}
-    
-    {%- assign _filter_key = _page_articles_data_source_filter.key | default: nil -%}
-    {%- assign _filter_values = _page_articles_data_source_filter.values | replace: " ","" | downcase | split: "," -%}
-
-    {%- if _filter_key -%}
-      {%- for _filter_value in _filter_values -%}
-        {%- assign _articles = _articles | where: _filter_key, _filter_value -%}
-      {%- endfor -%}
-    {%- endif -%}
-  {%- endif -%}
 
   <div class="layout--articles">
 
