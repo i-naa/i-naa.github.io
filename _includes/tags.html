@@ -8,7 +8,9 @@
 {%- assign _docs = site.docs | where: 'type', 'document' -%}
 {%- assign _docs_tags_group = _docs | map: 'tags' | join: ',' | split: ',' | group_by: tag -%}
 {%- for _docs_tag_group in _docs_tags_group -%}
-  {%- assign _docs_tag = _docs_tag_group.name | split '||' | push: _docs_tag_group.items -%}
+  {%- assign _docs_tag = '' | split: ',' -%}
+  {%- assign _docs_tag | push : _docs_tag_group.name%}
+
   {%- assign _docs_tags = _docs_tags | push: _docs_tag -%}
 {%- endfor -%}
 {%- assign _docs_tags | compact -%}
