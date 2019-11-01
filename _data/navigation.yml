@@ -10,7 +10,7 @@ docs_navigation:
     url: /docs/computer-science
     children:
       - title: Operating system
-        url: /docs/computer-science/opertaing-system
+        url: /docs/computer-science/operating-system
   - title: Digital forensic
     url: /docs/digital-forensic
     children:
