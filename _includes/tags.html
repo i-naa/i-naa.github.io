@@ -3,11 +3,12 @@
 {%- assign _tag_cur_size = 1 -%}
 {%- assign _tags = site.tags | sort -%}
 
+
 {%- assign _docs_tags = '' -%}
 {%- assign _docs = site.docs | where: 'type', 'document' -%}
 {%- assign _docs_tags_group = _docs | map: 'tags' | join: ',' | split: ',' | group_by: tag -%}
 {%- for _docs_tag_group in _docs_tags_group -%}
-{{_docs_tag_group}}<br>
+{{_docs_tag_group.items.size}}<br>
 {%- endfor -%}
 
 {%- for _tag in _tags -%}
