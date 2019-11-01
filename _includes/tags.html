@@ -11,6 +11,7 @@
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.name -%}
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.items -%}
   {%- assign _tags = _tags | push: _docs_tag -%}
+  {{_docs_tag[0]}} - {{_docs_tag[1].size}} <br>
   {% for _tag in _tags %}
     {{_tag[0]}}<br>
   {% endfor %}<br><br>
