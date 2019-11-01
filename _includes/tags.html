@@ -9,11 +9,9 @@
 {%- assign _docs_tags_group = _docs | map: 'tags' | join: ',' | split: ',' | group_by: tag -%}
 {%- for _docs_tag_group in _docs_tags_group -%}
   {%- assign _docs_tag = '' | split: ',' -%}
-  {%- assign _docs_tag = _docs_tag | push: 'test' -%}
-
-  {%- assign _temp_array = '1,2,3' | split: ',' -%}
-  {%- assign _docs_tag = _docs_tag | push: _temp_array -%}
-  {{_docs_tag[0]}} - {{_docs_tag[1].size}}
+  {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.name -%}
+  {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.items -%}
+  {{_docs_tag[0]}} - {{_docs_tag[1].size}}<br>
 {%- endfor -%}
 
 
