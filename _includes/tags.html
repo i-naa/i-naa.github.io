@@ -10,6 +10,10 @@
 {%- for _docs_tag_group in _docs_tags_group -%}
   {%- assign _docs_tag = '' | split: ',' -%}
   {%- assign _docs_tag = _docs_tag | push: 'test' -%}
+
+  {%- assign _temp_array = '1,2,3' | split: ',' -%}
+  {%- assign _docs_tag = _docs_tag | push: _temp_array -%}
+
 {%- endfor -%}
 
 
