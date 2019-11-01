@@ -3,7 +3,7 @@ layout: page
 ---
 
 {%- assign _page_articles_data_source = page.articles.data_source | default: layout.articles.data_source -%}
-{%- assign _page_articles_data_source_filter = page.articles.data_source.filter | default: nil -%}
+{%- assign _page_articles_data_source_filter = page.articles.data_source.filter -%}
 
 {{ _page_articles_data_source_filter }}
 
