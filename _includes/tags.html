@@ -10,11 +10,10 @@
 {%- for _docs_tag_group in _docs_tags_group -%}
   {%- assign _docs_tag = '' | split: ',' -%}
   {%- assign _docs_tag | push : _docs_tag_group.name%}
-
-  {%- assign _docs_tags = _docs_tags | push: _docs_tag -%}
+  {{_docs_tag}}
 {%- endfor -%}
-{%- assign _docs_tags | compact -%}
-{{_docs_tags}}
+
+
 
 {%- for _tag in _tags -%}
   {%- assign _tag_cur_size = _tag[1].size -%}
