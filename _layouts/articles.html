@@ -3,7 +3,7 @@ layout: page
 ---
 
 {%- assign _page_articles_data_source = page.articles.data_source | default: layout.articles.data_source -%}
-{%- assign _page_articles_data_source_filter = page.articles.data_source.filter | default: nil -%}
+{%- assign _page_articles_filter = page.articles.filter | default: nil -%}
 
 {%- if _page_articles_data_source -%}
 {%- assign _keys = _page_articles_data_source | split: '.' -%}
@@ -33,6 +33,17 @@ layout: page
 {%- assign _type = page.articles.type | default: layout.articles.type -%}
 
 {%- if _articles -%}
+
+  {%- if _page_articles_filter -%}
+    {%- assign _filter_key = _page_articles_filter.key | default: nil -%}
+    {%- assign _filter_values = _page_articles_filter.values | replace: " ","" | downcase | split: "," -%}
+
+    {%- if _filter_key -%}
+      {%- for _filter_value in _filter_values -%}
+        {%- assign _articles = _articles | where: _filter_key, _filter_value -%}
+      {%- endfor -%}
+    {%- endif -%}
+  {%- endif -%}
 
   <div class="layout--articles">
 
