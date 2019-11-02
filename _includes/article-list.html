@@ -13,6 +13,8 @@
   {%- assign _sorted_list = _sorted_list | reverse -%}
 {%- endif -%}
 
+{%- assign _date = nil -%}
+
 {%- if include.type == 'item' -%}
 <div class="article-list items items--divided">
 {%- elsif include.type == 'brief' -%}
