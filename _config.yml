@@ -258,7 +258,8 @@ defaults:
       show_date: true
 
 
-
+gems:
+    - jekyll-paginate-v2
 
 ## => Plugins
 ##############################
