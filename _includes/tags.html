@@ -18,6 +18,7 @@
   {%- assign _posts_tag = _posts_tag | push: _posts_tag_group[1] -%}
   {%- assign _tags = _tags | concat: _posts_tag -%}
 {%- endfor -%}
+{{_tags | array_to_sentence_string}}
 
 
 {%- for _tag in _tags -%}
