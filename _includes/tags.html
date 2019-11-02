@@ -9,13 +9,14 @@
   {%- assign _docs_tag = '' | split: ',' -%}
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.name -%}
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.items -%}
-  {%- assign _tags = _tags | concat: _docs_tag | compact -%}
+  {%- assign _tags = _tags | concat: _docs_tag -%}
 {%- endfor -%}
 
 {%- for _posts_tag_group in site.tags -%}
   {%- assign _posts_tag = '' | split: ',' -%}
   {%- assign _posts_tag = _posts_tag | push: _posts_tag_group[0] -%}
   {%- assign _posts_tag = _posts_tag | push: _posts_tag_group[1] -%}
+  {%- assign _tags = _tags | concat: _posts_tag -%}
 {%- endfor -%}
 
 
