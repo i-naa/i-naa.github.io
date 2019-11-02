@@ -1,6 +1,6 @@
 ---
 layout: home
-permalink   : /post/
+permalink   : /posts/
 articles:
   excerpt_type: html
 ---
