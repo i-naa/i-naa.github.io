@@ -11,9 +11,6 @@
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.size -%}
   {%- assign _tags = _tags | push: _docs_tag -%}
 {%- endfor -%}
-{%- for _tag in _tags -%}
-  {{_tag[0]}} - {{_tag[1]}}<br>
-{%- endfor -%}
 
 {%- for _posts_tag_group in site.tags -%}
   {%- assign _posts_tag = '' | split: ','-%}
@@ -21,6 +18,11 @@
   {%- assign _posts_tag = _posts_tag | push: _posts_tag_group[1].size -%}
   {%- assign _tags = _tags | push: _posts_tag -%}
 {%- endfor -%}
+
+{%- for _tag in _tags -%}
+  {{_tag[0]}} - {{_tag[1]}}<br>
+{%- endfor -%}
+
 
 {%- for _tag in _tags -%}
   {%- assign _tag_cur_size = _tag[1] -%}
@@ -35,11 +37,16 @@
 {%- if _tag_gap_size < 1 -%}
   {%- assign _tag_gap_size = 1 -%}
 {%- endif -%}
+
+{%- assign _number_of_posts = site.posts.size -%}
+{%- assign _number_of_docs = site.docs.size -%}
+{%- assign _number_of_all_docs = _number_of_posts | plus: _number_of_posts -%}
+
 <div class="site-tags js-tags">
   <ul class="menu">
     <li>
       <button type="button" class="button button--secondary button--pill tag-button tag-button--all" data-encode="">
-        Show All<div class="tag-button__count">{{ site.docs | size }}</div>
+        Show All<div class="tag-button__count">{{ _number_of_all_docs }}</div>
       </button>
     </li>
     {%- for _tag in _tags -%}
