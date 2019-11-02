@@ -8,22 +8,22 @@
 {%- for _docs_tag_group in _docs_tags_group -%}
   {%- assign _docs_tag = '' | split: ',' -%}
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.name -%}
-  {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.items -%}
+  {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.size -%}
   {%- assign _tags = _tags | concat: _docs_tag -%}
 {%- endfor -%}
 
 {%- for _posts_tag_group in site.tags -%}
   {%- assign _posts_tag = '' | split: ',' -%}
   {%- assign _posts_tag = _posts_tag | push: _posts_tag_group[0] -%}
-  {%- assign _posts_tag = _posts_tag | push: _posts_tag_group[1] -%}
+  {%- assign _posts_tag = _posts_tag | push: _posts_tag_group[1].size -%}
   {%- assign _tags = _tags | concat: _posts_tag -%}
 {%- endfor -%}
 {{_tags | array_to_sentence_string}}
 
 
 {%- for _tag in _tags -%}
-  {{_tag[0]}} - {{_tag[1].size}}<br>
-  {%- assign _tag_cur_size = _tag[1].size -%}
+  {{_tag[0]}} - {{_tag[1]}}<br>
+  {%- assign _tag_cur_size = _tag[1] -%}
   {%- if _tag_cur_size > _tag_max_size -%}
     {%- assign _tag_max_size =  _tag_cur_size -%}
   {%- endif -%}
@@ -43,7 +43,7 @@
       </button>
     </li>
     {%- for _tag in _tags -%}
-      {%- assign _tag_cur_size = _tag[1].size -%}
+      {%- assign _tag_cur_size = _tag[1] -%}
       {%- assign _tag_min_1 = _tag_min_size -%}
       {%- assign _tag_max_1 = _tag_min_1 | plus: _tag_gap_size -%}
       {%- assign _tag_min_2 = _tag_max_1 -%}
