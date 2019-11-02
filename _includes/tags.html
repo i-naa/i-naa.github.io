@@ -4,30 +4,35 @@
 
 {%- assign _collections = include.collections | replace:' ','' | split: ',' -%}
 {%- assign _tags = '' | split : ',' -%}
-{%- assign _size_of_tags = 0 -%}
+{%- assign _size_of_docs = 0 -%}
 
 {%- for _collection in _collections -%}
   {%- assign _collection_obj = site[_collection] -%}
+  {%- assign _size_of_collection = 0-%}
 
   {%- if _collection == 'posts' -%}
+    {%- assign _size_of_collection = _collection_obj | size -%}
     {%- assign _tag_groups = site.tags -%}
     {%- for _tag_group in _tag_groups -%}
       {%- assign _tag = '' | split: ',' -%}
       {%- assign _tag = _tag | push: _tag_group[0] -%}
       {%- assign _tag = _tag | push: _tag_group[1].size -%}
-      {%- assign _size_of_tags = _size_of_tags | plus: _tag[1] -%}
       {%- assign _tags = _tags | push: _tag -%}
     {%- endfor -%}
+
   {%- else -%}
+    {%- assign _size_of_collection = _collection_obj | where: 'type', 'document' | size -%}
     {%- assign _tag_groups = _collection_obj | map: 'tags' | join: ',' | split: ',' | group_by: tag -%}
     {%- for _tag_group in _tag_groups -%}
       {%- assign _tag = '' | split: ',' -%}
       {%- assign _tag = _tag | push: _tag_group.name -%}
       {%- assign _tag = _tag | push: _tag_group.size -%}
-      {%- assign _size_of_tags = _size_of_tags | plus: _tag[1] -%}
       {%- assign _tags = _tags | push: _tag -%}
     {%- endfor -%}
   {%- endif -%}
+
+  {%- assign _size_of_docs = _size_of_docs | plus: _size_of_collection -%}
+
 {%- endfor -%}
 
 {%- for _tag in _tags -%}
@@ -48,7 +53,7 @@
   <ul class="menu">
     <li>
       <button type="button" class="button button--secondary button--pill tag-button tag-button--all" data-encode="">
-        Show All<div class="tag-button__count">{{ _size_of_tags }}</div>
+        Show All<div class="tag-button__count">{{ _size_of_docs }}</div>
       </button>
     </li>
     {%- for _tag in _tags -%}
