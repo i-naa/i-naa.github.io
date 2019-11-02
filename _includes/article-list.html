@@ -92,6 +92,7 @@
       {%- endfor -%}
       {%- if include.group_by == 'year' -%}
         {%- assign _currentdate = _article.date | date: '%Y' -%}
+        {{_currentdate}}
         {%- if _currentdate != _date -%}
           {%- unless forloop.first -%}</ul></section>{%- endunless -%}
           <section><h2 class="article-list__group-header">{{ _currentdate }}</h2><ul class="items">
@@ -106,7 +107,7 @@
           {%- endif -%}
           <a itemprop="headline" class="item__header" href="{{ _article_url }}">{{ _article.title }}</a></div>
       </li>
-      
+
 
     {%- elsif include.type == 'grid' -%}
       {%- if include.size == 'sm' -%}

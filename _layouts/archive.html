@@ -32,6 +32,7 @@ titles:
   <h2 style='border-bottom:1px dashed #cecece;padding-bottom:0.5rem;'>Docs</h2>
   <div class="js-result layout--archive__result d-none">
     {%- assign _site_docs = site.docs | where: 'type', 'document' -%}
+    {%- include article-list.html articles=_site_docs type='brief' show_info=true reverse=true group_by='year' -%}
   </div>
 
   <!-- Posts area -->
