@@ -7,8 +7,8 @@
 
 {%- for _collection in _collections -%}
   {%- assign _collection_name = _collection -%}
-  {%- assign _collection = site[_collection] -%}
-  {{_collection.title}}<br>
+  {%- assign _collection_obj = site[_collection] -%}
+  {{_collection_obj.title}}<br>
 
   {%- if _collection_name == 'posts' -%}
     {%- assign _tag_groups = site.tags -%}
@@ -19,7 +19,7 @@
       {%- assign _tags = _tags | push: _tag -%}
     {%- endfor -%}
   {%- else -%}
-    {%- assign _tag_groups = _collection | map: 'tags' | join: ',' | split: ',' | group_by: tag -%}
+    {%- assign _tag_groups = _collection_obj | map: 'tags' | join: ',' | split: ',' | group_by: tag -%}
     {%- for _tag_group in _tag_groups -%}
       {%- assign _tag = '' | split: ',' -%}
       {%- assign _tag = _tag | push: _tag_group.name -%}
