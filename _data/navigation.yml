@@ -1,9 +1,11 @@
 header:
-  - title:      Archive
-    url:        /archive.html
-  - title:      Docs
-    url:        /docs/
-    key:        docs
+  - title: Archive
+    url: /archive.html
+  - title: Docs
+    url: /docs/
+    key: docs
+  - title: Posts
+    url: /posts/
 
 docs_navigation:
   - title: Computer science
