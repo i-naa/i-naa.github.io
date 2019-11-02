@@ -20,7 +20,7 @@
 {%- endfor -%}
 
 {%- for _tag in _tags -%}
-  {{_tag[0]}} - {{_tag[1]}}<br>
+  {{tag}}<br>
   {%- assign _tag_cur_size = _tag[1] -%}
   {%- if _tag_cur_size > _tag_max_size -%}
     {%- assign _tag_max_size =  _tag_cur_size -%}
