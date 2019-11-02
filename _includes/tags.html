@@ -9,6 +9,9 @@
   {%- assign _docs_tag = _docs_tag_group.name | append: '||' | append: _docs_tag_group.size | split: '||' -%}
   {%- assign _tags = _tags | push: _docs_tag -%}
 {%- endfor -%}
+{%- for _tag in _tags -%}
+  {{_tag}}
+{%- endfor -%}
 
 {%- for _posts_tag_group in site.tags -%}
   {%- assign _posts_tag = '' | split: ',' -%}
