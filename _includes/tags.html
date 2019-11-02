@@ -18,9 +18,9 @@
   {%- assign _posts_tag = _posts_tag | push: _posts_tag_group[1].size -%}
   {%- assign _tags = _tags | concat: _posts_tag -%}
 {%- endfor -%}
+{{_tags.size}}
 
 {%- for _tag in _tags -%}
-  {{tag}}<br>
   {%- assign _tag_cur_size = _tag[1] -%}
   {%- if _tag_cur_size > _tag_max_size -%}
     {%- assign _tag_max_size =  _tag_cur_size -%}
