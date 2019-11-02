@@ -4,18 +4,18 @@
 
 {%- assign _collections = include.collections | replace:' ','' | split: ',' -%}
 {%- assign _tags = '' | split : ',' -%}
+{%- assign _size_of_tags = 0 -%}
 
 {%- for _collection in _collections -%}
-  {%- assign _collection_name = _collection -%}
   {%- assign _collection_obj = site[_collection] -%}
-  {{_collection_obj.title}}<br>
 
-  {%- if _collection_name == 'posts' -%}
+  {%- if _collection == 'posts' -%}
     {%- assign _tag_groups = site.tags -%}
     {%- for _tag_group in _tag_groups -%}
       {%- assign _tag = '' | split: ',' -%}
       {%- assign _tag = _tag | push: _tag_group[0] -%}
       {%- assign _tag = _tag | push: _tag_group[1].size -%}
+      {%- assign _size_of_tags = _size_of_tags | plus: _tag[1] -%}
       {%- assign _tags = _tags | push: _tag -%}
     {%- endfor -%}
   {%- else -%}
@@ -24,17 +24,11 @@
       {%- assign _tag = '' | split: ',' -%}
       {%- assign _tag = _tag | push: _tag_group.name -%}
       {%- assign _tag = _tag | push: _tag_group.size -%}
+      {%- assign _size_of_tags = _size_of_tags | plus: _tag[1] -%}
       {%- assign _tags = _tags | push: _tag -%}
     {%- endfor -%}
   {%- endif -%}
-
-
 {%- endfor -%}
-
-{%- for _tag in _tags -%}
-  {{_tag[0]}} - {{_tag[1]}}<br>
-{%- endfor -%}
-
 
 {%- for _tag in _tags -%}
   {%- assign _tag_cur_size = _tag[1] -%}
@@ -50,15 +44,11 @@
   {%- assign _tag_gap_size = 1 -%}
 {%- endif -%}
 
-{%- assign _number_of_posts = site.posts.size -%}
-{%- assign _number_of_docs = site.docs.size -%}
-{%- assign _number_of_all_docs = _number_of_posts | plus: _number_of_docs -%}
-
 <div class="site-tags js-tags">
   <ul class="menu">
     <li>
       <button type="button" class="button button--secondary button--pill tag-button tag-button--all" data-encode="">
-        Show All<div class="tag-button__count">{{ _number_of_all_docs }}</div>
+        Show All<div class="tag-button__count">{{ _size_of_tags }}</div>
       </button>
     </li>
     {%- for _tag in _tags -%}
