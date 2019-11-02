@@ -8,6 +8,7 @@
 {%- for _collection in _collections -%}
   {%- assign _collection_name = _collection -%}
   {%- assign _collection = site[_collection] -%}
+  {{_collection.title}}<br>
 
   {%- if _collection_name == 'posts' -%}
     {%- assign _tag_groups = site.tags -%}
