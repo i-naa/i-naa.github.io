@@ -10,7 +10,7 @@
   {%- assign _tags = _tags | push: _docs_tag -%}
 {%- endfor -%}
 {%- for _tag in _tags -%}
-  {{_tag}}
+  {{_tag[0]}}
 {%- endfor -%}
 
 {%- for _posts_tag_group in site.tags -%}
