@@ -14,6 +14,8 @@
 {%- endfor -%}
 
 {%- for _posts_tag_group in site.tags -%}
+  {%- assign _posts_tag = _posts_tag_group[0] | append: '||' | append: _posts_tag_group[1].size | split: '||' -%}
+
   {%- assign _posts_tag = '' | split: ',' -%}
   {%- assign _posts_tag = _posts_tag | push: _posts_tag_group[0] -%}
   {%- assign _posts_tag = _posts_tag | push: _posts_tag_group[1].size -%}
