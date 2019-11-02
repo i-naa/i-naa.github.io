@@ -1,7 +1,7 @@
 {%- assign _tag_max_size = 1 -%}
 {%- assign _tag_min_size = 1 -%}
 {%- assign _tag_cur_size = 1 -%}
-{%- assign _tags = '' | split : ',' -%}
+{%- assign _tags = site.tags -%}
 
 {%- assign _docs = site.docs | where: 'type', 'document' -%}
 {%- assign _docs_tags_group = _docs | map: 'tags' | join: ',' | split: ',' | group_by: tag -%}
@@ -10,15 +10,8 @@
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.name -%}
   {%- assign _docs_tag = _docs_tag | push: _docs_tag_group.items -%}
   {%- assign _tags = _tags | concat: _docs_tag | compact -%}
+  {{_tags | array_to_sentence_string}}
 {%- endfor -%}
-
-{%- for _posts_tag_group in site.tags -%}
-  {%- assign _posts_tag = '' | split: ',' -%}
-  {%- assign _posts_tag = _posts_tag | push: _posts_tag_group[0] -%}
-  {%- assign _posts_tag = _posts_tag | push: _posts_tag_group[1] -%}
-  {%- assign _tags = _tags | concat: _posts_tag | compact -%}
-{%- endfor -%}
-
 
 {%- for _tag in _tags -%}
   {{_tag[0]}} - {{_tag[1].size}}<br>
