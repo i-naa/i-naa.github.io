@@ -29,10 +29,73 @@ memory_forensic_navigation:
   - title: Introduction
     children:
       - title: Systems Overview
-        url: /docs/digital-forensic/memory-forensic/system-overview
+        url: /docs/digital-forensic/memory-forensic/introduction/system-overview
       - title: Data Structures
-        url: /docs/digital-forensic/memory-forensic/data-structures
+        url: /docs/digital-forensic/memory-forensic/introduction/data-structures
+      - title: The Volatility Framework
+        url: /docs/digital-forensic/memory-forensic/introduction/the-volatility-framework
+      - title: Memory Acquisition
+        url: /docs/digital-forensic/memory-forensic/introduction/memory-acquisition
   - title: Windows Memory Forensics
+    children:
+      - title: Windows Objects and Pool Allocations
+        url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/windows-objects-and-pool-allocation
+      - title: Processes, Handles, and Tokens
+        url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/processes-handles-and-tokens
+      - title: Process Memory Internals
+        url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/process-memory-internals
+      - title: Hunting Malwares in Process Memory
+        url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/hunting-malwares-in-process-memory
+      - title: Event Logs
+        url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/event-logs
+      - title: Registry in Memory
+        url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/registry-in-memory
+      - title: Networking
+        url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/networking
+      - title: Windows Services
+        url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/windows-services
+      - title: Kernel Forensics and Rootkits
+        url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/kernel-forensics-and-rootkits
+      - title: Windows GUI Subsystem, Part 1
+        url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/windows-gui-subsystem-part-1
+      - title: Windows GUI Subsystem, Part 2
+        url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/windows-gui-subsystem-part-2
+      - title: Disk Artifacts in Memory
+        url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/disk-artifacts-in-memory
+      - title: Event Reconstruction
+        url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/event-reconstruction
+      - title: timelining
+        url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/timelining
+  - title: Linux Memory Forensics
+    children:
+      - title: Linux Memory Acquisition
+        url: /docs/digital-forensic/memory-forensic/linux-memory-forensics/linux-memory-acquisition
+      - title: Linux Operating System
+        url: /docs/digital-forensic/memory-forensic/linux-memory-forensics/linux-operating-system
+      - title: Processes and Process Memory
+        url: /docs/digital-forensic/memory-forensic/linux-memory-forensics/processes-and-process-memory
+      - title: Networking Artifacts
+        url: /docs/digital-forensic/memory-forensic/linux-memory-forensics/networking-artifacts
+      - title: Kernel Memory Artifacts
+        url: /docs/digital-forensic/memory-forensic/linux-memory-forensics/kernel-memory-artifacts
+      - title: File Systems in Memory
+        url: /docs/digital-forensic/memory-forensic/linux-memory-forensics/file-systems-in-memory
+      - title: Userland Rootkits
+        url: /docs/digital-forensic/memory-forensic/linux-memory-forensics/userland-rootkits
+      - title: Kernel Mode Rootkits
+        url: /docs/digital-forensic/memory-forensic/linux-memory-forensics/kernel-mode-rootkits
+      - title: Case Study: Phalanx2
+        url: /docs/digital-forensic/memory-forensic/linux-memory-forensics/case-study-phalanx2
+  - title: Mac Memory Forensics
+    children:
+      - title: Mac Acquisition and Internals
+        url: /docs/digital-forensic/memory-forensic/mac-memory-forensics/mac-acquisition-and-internals
+      - title: Mac Memory Overview
+        url: /docs/digital-forensic/memory-forensic/mac-memory-forensics/mac-memory-overview
+      - title: Malicious Code and Rootkits
+        url: /docs/digital-forensic/memory-forensic/mac-memory-forensics/malicious-code-and-rootkits
+      - title: Tracking User Activity
+        url: /docs/digital-forensic/memory-forensic/mac-memory-forensics/tracking-user-activity
 
 
 layouts:
