@@ -84,7 +84,7 @@ memory_forensic_navigation:
         url: /docs/digital-forensic/memory-forensic/linux-memory-forensics/userland-rootkits
       - title: Kernel Mode Rootkits
         url: /docs/digital-forensic/memory-forensic/linux-memory-forensics/kernel-mode-rootkits
-      - title: Case Study: Phalanx2
+      - title: Case Study\: Phalanx2
         url: /docs/digital-forensic/memory-forensic/linux-memory-forensics/case-study-phalanx2
   - title: Mac Memory Forensics
     children:
