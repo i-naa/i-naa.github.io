@@ -19,7 +19,7 @@ docs_navigation:
       - title: Disk forensic
         url: /docs/digital-forensic/disk-forensic
       - title: Memory forensic
-        url: /docs/digital-forensic/memory-forensic/introduction/system-overview
+        url: /docs/digital-forensic/memory-forensic/introduction/systems-overview
   - title : Code review
     url: /docs/code-review
     children:
@@ -29,7 +29,7 @@ memory_forensic_navigation:
   - title: Introduction
     children:
       - title: Systems Overview
-        url: /docs/digital-forensic/memory-forensic/introduction/system-overview
+        url: /docs/digital-forensic/memory-forensic/introduction/systems-overview
       - title: Data Structures
         url: /docs/digital-forensic/memory-forensic/introduction/data-structures
       - title: The Volatility Framework
