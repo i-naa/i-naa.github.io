@@ -25,6 +25,19 @@ docs_navigation:
     children:
         - title: Volatility(v2.6, py)
 
+memory_forensic_navigation:
+  - title: Introduction
+    children:
+      - title: Systems Overview
+        children:
+          - title: Digital Environment
+          - title: PC Architecture
+      - title: Data Structures
+        children:
+          - title: Basic Data Types
+  - title: Windows Memory Forensics
+
+
 layouts:
   - title: Articles
     children:
