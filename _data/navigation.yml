@@ -19,7 +19,7 @@ docs_navigation:
       - title: Disk forensic
         url: /docs/digital-forensic/disk-forensic
       - title: Memory forensic
-        url: /docs/digital-forensic/memory-forensic/system-overview
+        url: /docs/digital-forensic/memory-forensic/introduction/system-overview
   - title : Code review
     url: /docs/code-review
     children:
