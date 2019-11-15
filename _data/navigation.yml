@@ -64,7 +64,7 @@ memory_forensic_navigation:
         url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/disk-artifacts-in-memory
       - title: Event Reconstruction
         url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/event-reconstruction
-      - title: timelining
+      - title: Timelining
         url: /docs/digital-forensic/memory-forensic/windows-memory-forensics/timelining
   - title: Linux Memory Forensics
     children:
