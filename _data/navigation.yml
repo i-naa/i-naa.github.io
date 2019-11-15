@@ -29,12 +29,9 @@ memory_forensic_navigation:
   - title: Introduction
     children:
       - title: Systems Overview
-        children:
-          - title: Digital Environment
-          - title: PC Architecture
+        url: /docs/digital-forensic/memory-forensic/system-overview
       - title: Data Structures
-        children:
-          - title: Basic Data Types
+        url: /docs/digital-forensic/memory-forensic/data-structures
   - title: Windows Memory Forensics
 
 
