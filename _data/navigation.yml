@@ -18,10 +18,10 @@ docs_navigation:
     children:
       - title: Disk forensic
         url: /docs/digital-forensic/disk-forensic
-      - title: 디지털포렌식전문가2급(실기)
-        url: /docs/digital-forensic/certificate
-#      - title: Memory forensic
-#        url: /docs/digital-forensic/memory-forensic/introduction/systems-overview
+      # - title: 디지털포렌식전문가2급(실기)
+      #   url: /docs/digital-forensic/digital-forensic-certificate
+     - title: Memory forensic
+       url: /docs/digital-forensic/memory-forensic/introduction/systems-overview
   - title : Code review
     url: /docs/code-review
     children:
